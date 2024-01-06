@@ -7,7 +7,7 @@ import ReactSwitch from 'react-switch';
 import Navbar from './components/navbar';
 export const Themecontext=createContext(null);
 const baseurl =`https://api.unsplash.com/search/photos`;
-const accesskey=`JO5lRmLii258Ivppmy_jZehCEygVgv8x193iDwLUuvs`;
+const accesskey=process.env.REACT_APP_API_KEY;
 const imagesperpage=20;
 function App() {
   const [query, setQuery] = useState("nature");
