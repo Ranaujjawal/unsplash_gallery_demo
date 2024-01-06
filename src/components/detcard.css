@@ -1,0 +1,102 @@
+/* styles.css */
+
+.detailed-card {
+    background: #fff;
+    padding: 20px;
+    /* border-radius: 2px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 50%; /* Set the card width to 50% of the page width */
+    max-width: 90%; /* Limit the maximum width */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+  }
+  
+  @media (max-width: 768px) {
+    .detailed-card {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .detailed-card {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  .detailed-image {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .user-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details {
+    text-align: left;
+  }
+  
+  .download-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .download-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-link {
+    margin: 5px 0;
+    text-align: center;
+  }
+  
+  .download-link a {
+    text-decoration: none;
+    color: #007BFF;
+    display: block;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right:30px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold; 
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+    size: 10px;
+  
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  

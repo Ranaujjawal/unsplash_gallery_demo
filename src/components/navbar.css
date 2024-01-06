@@ -1,0 +1,91 @@
+/* Navbar.css */
+#dark .navbar{
+  background-color:rgba(70, 66, 66, 0.419);
+}
+#light .navbar{
+  background-color:white;
+}
+.navbar {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+.navbar-brand a {
+  color: #fff;
+  text-decoration:wavy;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-left: 2rem;
+  color: rgb(20, 1, 23);
+}
+#dark .navbar-brand a{
+  color: #fff;
+}
+#light .navbar-brand a{
+  color: #121212;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute; /* Add this line */
+  right: 15px; /* Add this line */
+  top: 15px; /* Add this line */
+  z-index: 2; /* Add this line */
+}
+
+/* Modify the hamburger icon appearance */
+.menu-toggle i {
+  /* Customize the color of the hamburger icon */
+  color: #fff;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  color: #160303;
+  text-decoration: none;
+  font-weight: 600;
+}
+#dark .navbar-menu a{
+  color: #fff;
+}
+#light .navbar-menu a{
+  color: #121212;
+}
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Add this line */
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+
+  /* Show the hamburger icon */
+  .menu-toggle {
+    display: block;
+  }
+}

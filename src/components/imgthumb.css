@@ -1,0 +1,114 @@
+/* styles.css */
+
+#dark .image-info{
+  background-color:rgba(70, 66, 66, 0.419);
+}
+#light .image-info{
+  background-color:white;
+}
+.image-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 0;
+  margin: 3% ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.owner-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.owner-details {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+  flex-direction: column;
+}
+
+.owner-name {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.owner-username {
+  color: #555;
+  margin: 0;
+  padding: 0;
+}
+#dark .owner-username{
+  color:#fff;
+}
+#light .owner-username{
+ color: black;
+}
+#dark .owner-name{
+  color:#fff;
+}
+#light .owner-name{
+ color: black;
+}
+.likes {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+#dark .likes{
+  color:#fff;
+}
+#light .likes{
+ color: black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100; 
+  backdrop-filter: blur(8px); 
+}
+
+.detailed-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 90%;
+}
+#dark .detailed-card{
+  background-color:rgba(70, 66, 66, 0.419);
+}
+#light .detailed-card{
+  background-color:white;
+}
